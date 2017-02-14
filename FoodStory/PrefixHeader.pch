@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  FoodStory
+//
+//  Created by xiaoping on 2017/2/14.
+//  Copyright © 2017年 coffee. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "FSAPPConfigure.h"
+
+#endif /* PrefixHeader_pch */
