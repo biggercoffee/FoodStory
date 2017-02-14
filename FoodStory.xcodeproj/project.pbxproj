@@ -129,6 +129,7 @@
 		1A03F4B51E52A8FF00FFD436 /* FoodStory */ = {
 			isa = PBXGroup;
 			children = (
+				1A03F5061E52B38000FFD436 /* Categories */,
 				1A03F4F01E52ADED00FFD436 /* APPConfigure */,
 				1A03F4EB1E52AB1D00FFD436 /* Modules */,
 				1A03F4EA1E52AB0D00FFD436 /* Base */,
@@ -254,6 +255,29 @@
 				1A03F5041E52AF5900FFD436 /* FSMyVC.m */,
 			);
 			path = "我的首页";
+			sourceTree = "<group>";
+		};
+		1A03F5061E52B38000FFD436 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1A03F5071E52B39B00FFD436 /* NS */,
+				1A03F5081E52B39B00FFD436 /* UI */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		1A03F5071E52B39B00FFD436 /* NS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NS;
+			sourceTree = "<group>";
+		};
+		1A03F5081E52B39B00FFD436 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		2B2E25148A72696D23AB3204 /* Pods */ = {
@@ -806,6 +830,7 @@
 				1A03F4E21E52A90000FFD436 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A03F4E31E52A90000FFD436 /* Build configuration list for PBXNativeTarget "FoodStoryTests" */ = {
 			isa = XCConfigurationList;
@@ -814,6 +839,7 @@
 				1A03F4E51E52A90000FFD436 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A03F4E61E52A90000FFD436 /* Build configuration list for PBXNativeTarget "FoodStoryUITests" */ = {
 			isa = XCConfigurationList;
@@ -822,6 +848,7 @@
 				1A03F4E81E52A90000FFD436 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
