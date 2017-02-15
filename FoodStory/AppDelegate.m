@@ -19,6 +19,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = [FSAPPConfigure getRootController];
     [self.window makeKeyAndVisible];
+    //  test
     return YES;
 }
 
