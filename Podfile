@@ -7,6 +7,14 @@ target 'FoodStory' do
 
   # Pods for FoodStory
 
+  pod 'Masonry'
+  pod 'FMDB'
+  pod 'SDWebImageView'
+  pod 'Reachability'
+  pod 'MJRefresh'
+  pod 'ReactiveCocoa'
+  pod 'AFNetworking'
+
   target 'FoodStoryTests' do
     inherit! :search_paths
     # Pods for testing
