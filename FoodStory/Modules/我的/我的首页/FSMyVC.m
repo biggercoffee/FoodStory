@@ -7,9 +7,12 @@
 //
 
 #import "FSMyVC.h"
+#import "SNMyTableViewCell.h"
 
-@interface FSMyVC ()
+@interface FSMyVC ()<UITableViewDelegate ,UITableViewDataSource>
 
+@property (nonatomic ,strong) UITableView *tableView;
+@property (nonatomic ,copy) NSArray *dataSource;
 @end
 
 @implementation FSMyVC
@@ -28,22 +31,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor greenColor];
+    [self setupUI];
+    [self setupData];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setupData {
+    _dataSource = @[@"1",@"2",@"3",@"4",@"5"];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)setupUI {
+    {
+        UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        tableView.delegate = self;
+        tableView.dataSource = self;
+        tableView.tableFooterView = [UIView new];
+        tableView.rowHeight = 60;
+        tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+        tableView.separatorInset = UIEdgeInsetsZero;
+        [self.view addSubview:tableView];
+        _tableView = tableView;
+    }
 }
-*/
+
+#pragma mark - UITableViewdelegte & UITableViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return _dataSource.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    SNMyTableViewCell *cell = [SNMyTableViewCell cellWithTableView:tableView];
+    cell.item = self.dataSource[indexPath.row];
+    return cell;
+}
 
 @end

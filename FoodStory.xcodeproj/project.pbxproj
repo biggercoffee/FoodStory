@@ -18,7 +18,8 @@
 		1A03F4F71E52AEF800FFD436 /* FSBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A03F4F61E52AEF800FFD436 /* FSBaseVC.m */; };
 		1A03F4FA1E52AF0800FFD436 /* FSRecommendVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A03F4F91E52AF0800FFD436 /* FSRecommendVC.m */; };
 		1A03F5011E52AF4100FFD436 /* FSFindVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A03F5001E52AF4100FFD436 /* FSFindVC.m */; };
-		1A03F5051E52AF5900FFD436 /* FSMyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A03F5041E52AF5900FFD436 /* FSMyVC.m */; };
+		33BCAF231E55D96900A5661B /* FSMyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BCAF1E1E55D96900A5661B /* FSMyVC.m */; };
+		33BCAF241E55D96900A5661B /* SNMyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BCAF221E55D96900A5661B /* SNMyTableViewCell.m */; };
 		F4ED426BCB32B109CDDD9674 /* libPods-FoodStory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C342BB9BF21B81AF77ED8BF3 /* libPods-FoodStory.a */; };
 		F73835E374AF6E312BE883C4 /* libPods-FoodStoryTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A898A43F4B01A3BDFD4FFF7 /* libPods-FoodStoryTests.a */; };
 /* End PBXBuildFile section */
@@ -64,9 +65,11 @@
 		1A03F4F91E52AF0800FFD436 /* FSRecommendVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSRecommendVC.m; sourceTree = "<group>"; };
 		1A03F4FF1E52AF4100FFD436 /* FSFindVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSFindVC.h; sourceTree = "<group>"; };
 		1A03F5001E52AF4100FFD436 /* FSFindVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSFindVC.m; sourceTree = "<group>"; };
-		1A03F5031E52AF5900FFD436 /* FSMyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMyVC.h; sourceTree = "<group>"; };
-		1A03F5041E52AF5900FFD436 /* FSMyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMyVC.m; sourceTree = "<group>"; };
 		22D0BD057B4F9EA5A97A56EC /* Pods-FoodStory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodStory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodStory/Pods-FoodStory.debug.xcconfig"; sourceTree = "<group>"; };
+		33BCAF1D1E55D96900A5661B /* FSMyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMyVC.h; sourceTree = "<group>"; };
+		33BCAF1E1E55D96900A5661B /* FSMyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMyVC.m; sourceTree = "<group>"; };
+		33BCAF211E55D96900A5661B /* SNMyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNMyTableViewCell.h; sourceTree = "<group>"; };
+		33BCAF221E55D96900A5661B /* SNMyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNMyTableViewCell.m; sourceTree = "<group>"; };
 		33D892734328B6563B3E2BC4 /* Pods-FoodStoryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodStoryUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodStoryUITests/Pods-FoodStoryUITests.release.xcconfig"; sourceTree = "<group>"; };
 		56D0DEE6E7EA1C3ED1F1F15E /* Pods-FoodStoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodStoryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodStoryTests/Pods-FoodStoryTests.release.xcconfig"; sourceTree = "<group>"; };
 		632DB221FEECABC489BD5297 /* Pods-FoodStoryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodStoryUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodStoryUITests/Pods-FoodStoryUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -216,7 +219,7 @@
 		1A03F4EE1E52AB9400FFD436 /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
-				1A03F5021E52AF4E00FFD436 /* 我的首页 */,
+				33BCAF1C1E55D96900A5661B /* 我的首页 */,
 			);
 			path = "我的";
 			sourceTree = "<group>";
@@ -246,15 +249,6 @@
 				1A03F5001E52AF4100FFD436 /* FSFindVC.m */,
 			);
 			path = "发现首页";
-			sourceTree = "<group>";
-		};
-		1A03F5021E52AF4E00FFD436 /* 我的首页 */ = {
-			isa = PBXGroup;
-			children = (
-				1A03F5031E52AF5900FFD436 /* FSMyVC.h */,
-				1A03F5041E52AF5900FFD436 /* FSMyVC.m */,
-			);
-			path = "我的首页";
 			sourceTree = "<group>";
 		};
 		1A03F5061E52B38000FFD436 /* Categories */ = {
@@ -291,6 +285,33 @@
 				33D892734328B6563B3E2BC4 /* Pods-FoodStoryUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		33BCAF1C1E55D96900A5661B /* 我的首页 */ = {
+			isa = PBXGroup;
+			children = (
+				33BCAF1D1E55D96900A5661B /* FSMyVC.h */,
+				33BCAF1E1E55D96900A5661B /* FSMyVC.m */,
+				33BCAF1F1E55D96900A5661B /* View */,
+			);
+			path = "我的首页";
+			sourceTree = "<group>";
+		};
+		33BCAF1F1E55D96900A5661B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				33BCAF201E55D96900A5661B /* SNMyTableViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33BCAF201E55D96900A5661B /* SNMyTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				33BCAF211E55D96900A5661B /* SNMyTableViewCell.h */,
+				33BCAF221E55D96900A5661B /* SNMyTableViewCell.m */,
+			);
+			path = SNMyTableViewCell;
 			sourceTree = "<group>";
 		};
 		526292E728D852A274FAD2FC /* Frameworks */ = {
@@ -586,11 +607,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33BCAF241E55D96900A5661B /* SNMyTableViewCell.m in Sources */,
 				1A03F4BB1E52A8FF00FFD436 /* AppDelegate.m in Sources */,
 				1A03F4B81E52A8FF00FFD436 /* main.m in Sources */,
 				1A03F4F71E52AEF800FFD436 /* FSBaseVC.m in Sources */,
 				1A03F4FA1E52AF0800FFD436 /* FSRecommendVC.m in Sources */,
-				1A03F5051E52AF5900FFD436 /* FSMyVC.m in Sources */,
+				33BCAF231E55D96900A5661B /* FSMyVC.m in Sources */,
 				1A03F4F31E52ADF500FFD436 /* FSAPPConfigure.m in Sources */,
 				1A03F5011E52AF4100FFD436 /* FSFindVC.m in Sources */,
 			);
