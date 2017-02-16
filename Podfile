@@ -9,10 +9,10 @@ target 'FoodStory' do
 
   pod 'Masonry'
   pod 'FMDB'
-  pod 'SDWebImageView'
+  pod 'SDWebImage'
   pod 'Reachability'
   pod 'MJRefresh'
-  pod 'ReactiveCocoa'
+  pod 'ReactiveCocoa', '~> 2.5'
   pod 'AFNetworking'
 
   target 'FoodStoryTests' do
